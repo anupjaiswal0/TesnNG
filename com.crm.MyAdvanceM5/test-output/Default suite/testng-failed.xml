@@ -3,16 +3,11 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="TestNGExe.DemoClass">
+      <class name="TestNGExe.OrangeHRM">
         <methods>
-          <include name="login"/>
-          <include name="logOut"/>
-          <include name="preCondition"/>
-          <include name="mani"/>
-          <include name="postCondtion"/>
-          <include name="main2"/>
+          <include name="dws" invocation-numbers="0 1 2 3"/>
         </methods>
-      </class> <!-- TestNGExe.DemoClass -->
+      </class> <!-- TestNGExe.OrangeHRM -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

@@ -20,7 +20,7 @@ public class OrangeHRM {
 	public Object[][] sender() throws EncryptedDocumentException, IOException {
 //		System.out.println("I'm a data provider");
 //		Reporter.log("I'm a data provider");
-		Reporter.log("I'm a data provider", true); // to see the message on cosole
+		Reporter.log("I'm a data provider", true); // to see the message on console
 		FileInputStream fis = new FileInputStream("/Users/rahul/Downloads/OrangHRM.xlsx");
 		Workbook wb = WorkbookFactory.create(fis);
 		Sheet sheet = wb.getSheet("Sheet2");
@@ -43,7 +43,7 @@ public class OrangeHRM {
 	public void reciever(String username, String password) throws InterruptedException {
 //		System.out.println("I'm reciever for login");
 		Reporter.log("I'm reciever for login");
-		Reporter.log("I'm reciever for login",true); // to see the message on cosole
+		Reporter.log("I'm reciever for login",true); // to see the message on console
 		WebDriver driver = new ChromeDriver();
 		driver.manage().window().maximize();
 		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(15000));

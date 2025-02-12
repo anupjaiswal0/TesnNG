@@ -6,7 +6,5 @@
 		<classes>
 			<class name="DataDrivenTesting.ReadFromXml"></class>
 		</classes>
-	</test> <!--
-	Test -->
-</suite> <!--
-Suite -->
+	</test>
+</suite> 

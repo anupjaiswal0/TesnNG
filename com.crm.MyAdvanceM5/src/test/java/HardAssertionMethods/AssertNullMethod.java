@@ -1,6 +1,7 @@
-package Assertion;
+package HardAssertionMethods;
 
 import static org.testng.Assert.assertEquals;
+import static org.testng.Assert.assertNull;
 import static org.testng.Assert.assertTrue;
 
 import java.time.Duration;
@@ -12,9 +13,10 @@ import org.openqa.selenium.chrome.ChromeDriver;
 import org.testng.Reporter;
 import org.testng.annotations.Test;
 
-public class AssertTrueMethod {
+public class AssertNullMethod {
 	@Test
 	public void test() throws InterruptedException {
+		String name = "Awake";
 		String expected_result = "https://demowebshop.tricentis.com/";
 		WebDriver driver = new ChromeDriver();
 		driver.manage().window().maximize();
@@ -31,7 +33,9 @@ public class AssertTrueMethod {
 		assertTrue(search_btn.isEnabled(), "Search Button is not Enabaled");
 		Reporter.log("All things a good", true);
 		search_btn.click();
-		Thread.sleep(2000);
+//		Thread.sleep(2000);
+		
+		assertNull(name);
 		driver.quit();
 	}
 }

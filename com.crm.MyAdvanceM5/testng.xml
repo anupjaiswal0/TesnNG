@@ -4,8 +4,8 @@
   <test thread-count="6" name="Test" parallel="classes">
     <classes>
       <class name="TestCaseExecution1.Dws"/>
-      <class name="TestCaseExecution1.Csk"/>
       <class name="TestCaseExecution2.RoyalEnfield"/>
+      <class name="TestCaseExecution1.Csk"/>
       <class name="TestCaseExecution1.Rcb"/>
       <class name="TestCaseExecution2.Ktm"/>
     </classes>

@@ -1,4 +1,4 @@
-package Assertion;
+package HardAssertionMethods;
 
 import static org.testng.Assert.assertEquals;
 

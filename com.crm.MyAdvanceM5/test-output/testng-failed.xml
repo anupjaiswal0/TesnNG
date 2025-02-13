@@ -3,12 +3,15 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="Listeners.SampleTestCases">
+      <class name="Listeners.FailedTestCaseScreenShot">
         <methods>
-          <include name="rcb"/>
-          <include name="csk"/>
+          <include name="login"/>
+          <include name="logOut"/>
+          <include name="preCondition"/>
+          <include name="postCondtion"/>
+          <include name="digitalDownload"/>
         </methods>
-      </class> <!-- Listeners.SampleTestCases -->
+      </class> <!-- Listeners.FailedTestCaseScreenShot -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

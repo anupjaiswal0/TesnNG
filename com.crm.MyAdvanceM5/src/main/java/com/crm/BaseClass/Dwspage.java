@@ -42,14 +42,16 @@ public class Dwspage {
 	}
 
 	@BeforeMethod
-	public void login() throws IOException {
+	public void login() throws IOException, InterruptedException {
 		String username = ReadProperties.getData("username");
 		String password = ReadProperties.getData("password");
 		driver.findElement(By.linkText("Log in")).click();
+		Thread.sleep(2000);
 		driver.findElement(By.id("Email")).sendKeys(username);
 		driver.findElement(By.id("Password")).sendKeys(password);
+		Thread.sleep(2000);
 		driver.findElement(By.xpath("//input[@value='Log in']")).click();
-		System.out.println("login successfull");
+//		System.out.println("login successfull");
 	}
 
 	@AfterMethod

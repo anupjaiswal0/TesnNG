@@ -49,7 +49,7 @@ public class Dwspage {
 		Thread.sleep(2000);
 		driver.findElement(By.id("Email")).sendKeys(username);
 		driver.findElement(By.id("Password")).sendKeys(password);
-		Thread.sleep(2000);
+//		Thread.sleep(2000);
 		driver.findElement(By.xpath("//input[@value='Log in']")).click();
 //		System.out.println("login successfull");
 	}

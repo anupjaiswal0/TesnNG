@@ -35,6 +35,5 @@ public class SampleReport {
 		ExtentTest test = report.createTest("reports");
 //	Use Flush
 		report.flush();
-
 	}
 }

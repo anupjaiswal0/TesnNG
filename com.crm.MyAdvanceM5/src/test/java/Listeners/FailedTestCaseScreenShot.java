@@ -35,3 +35,4 @@ public class FailedTestCaseScreenShot extends Dwspage {
 		}
 	}
 }
+

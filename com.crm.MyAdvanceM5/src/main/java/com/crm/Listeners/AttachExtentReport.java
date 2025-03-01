@@ -1,6 +1,5 @@
 package com.crm.Listeners;
 
-import java.io.File;
 import java.time.LocalDateTime;
 
 import org.openqa.selenium.OutputType;
@@ -28,7 +27,7 @@ public class AttachExtentReport extends Dwspage implements ITestListener {
 	@Override
 	public void onTestStart(ITestResult result) {
 		String name = result.getMethod().getMethodName();
-//		Reporter.log("onTestStart for - " + name, true);
+		Reporter.log("onTestStart for - " + name, true);
 		test = report.createTest(name);
 		test.log(Status.INFO, name + " is onTestStat.");
 	}
@@ -36,7 +35,7 @@ public class AttachExtentReport extends Dwspage implements ITestListener {
 	@Override
 	public void onTestSuccess(ITestResult result) {
 		String name = result.getMethod().getMethodName();
-//		Reporter.log("onTestSuccess for - " + name, true);
+		Reporter.log("onTestSuccess for - " + name, true);
 		test.log(Status.PASS, name + " is onTestSuccess.");
 	}
 
@@ -45,9 +44,9 @@ public class AttachExtentReport extends Dwspage implements ITestListener {
 		LocalDateTime date = LocalDateTime.now();
 		String time = date.toString().replace(':', '-');
 		String name = result.getMethod().getMethodName();
-		test.log(Status.FAIL, name+" is onTestFaillure");
+		test.log(Status.FAIL, name + " is onTestFaillure");
 //		Reporter.log("\033[91monTestFailure\033[0m", true);
-//		Reporter.log("onTestFailure for - " + name, true);
+		Reporter.log("onTestFailure for - " + name, true);
 
 		TakesScreenshot ts = (TakesScreenshot) driver;
 		String from = ts.getScreenshotAs(OutputType.BASE64);
@@ -57,7 +56,7 @@ public class AttachExtentReport extends Dwspage implements ITestListener {
 	@Override
 	public void onTestSkipped(ITestResult result) {
 		String name = result.getMethod().getMethodName();
-//		Reporter.log("onTestSkipped for - " + name, true);
+		Reporter.log("onTestSkipped for - " + name, true);
 		test.log(Status.SKIP, name + " is onTestSkipped.");
 	}
 
@@ -88,5 +87,4 @@ public class AttachExtentReport extends Dwspage implements ITestListener {
 		Reporter.log("onTestFinished", true);
 		report.flush();
 	}
-
 }

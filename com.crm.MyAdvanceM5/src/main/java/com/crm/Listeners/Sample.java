@@ -41,5 +41,4 @@ public class Sample implements ITestListener {
 	public void onFinish(ITestContext context) {
 		Reporter.log("onTestFinished", true);
 	}
-
 }

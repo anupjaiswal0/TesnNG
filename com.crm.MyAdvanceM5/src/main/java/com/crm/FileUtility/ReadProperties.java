@@ -9,8 +9,8 @@ public class ReadProperties {
 		Properties prop = new Properties();
 		FileInputStream fi = new FileInputStream("./src/test/resources/DwsLogin.properties");
 		prop.load(fi);
-		
 		String data = prop.getProperty(key);
 		return data;
 	}
 }
+

@@ -3,15 +3,11 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="Listeners.FailedTestCaseScreenShot">
+      <class name="Basic.GiftCards">
         <methods>
-          <include name="login"/>
-          <include name="logOut"/>
-          <include name="preCondition"/>
-          <include name="postCondtion"/>
-          <include name="digitalDownload"/>
+          <include name="main"/>
         </methods>
-      </class> <!-- Listeners.FailedTestCaseScreenShot -->
+      </class> <!-- Basic.GiftCards -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

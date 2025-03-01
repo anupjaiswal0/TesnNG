@@ -15,7 +15,6 @@ import org.testng.annotations.BeforeClass;
 import org.testng.annotations.BeforeMethod;
 
 import com.crm.FileUtility.ReadProperties;
-
 public class Dwspage {
 	public static String browser = null;
 	public static WebDriver driver = null;
@@ -35,7 +34,6 @@ public class Dwspage {
 		} else {
 			driver = new ChromeDriver();
 		}
-
 		driver.manage().window().maximize();
 		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(2000));
 		driver.get(url);
